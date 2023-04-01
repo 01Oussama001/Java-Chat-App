@@ -1,13 +1,16 @@
-Java Chat Application
+#Java Chat Application#
+
 This Java Chat Application is a basic multi-client chat application that allows multiple clients to connect and chat in real-time. The chat application consists of two parts, a client-side and server-side. The client-side of the chat application is developed using Java, and the server-side is developed using Java and MySQL.
 
 The application allows users to enter their username and password to authenticate and join the chat. Once authenticated, the user can send and receive messages to and from other connected clients. The application also supports private messaging, where a user can send a message to a specific user in the chat.
 
 Prerequisites:
+
 Java Development Kit (JDK) 8 or higher
 MySQL
 
-Getting Started
+Getting Started:
+
 1- Clone the project to your local machine using the following command:
    git clone https://github.com/<username>/java-chat-app.git
 
