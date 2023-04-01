@@ -67,7 +67,6 @@ public class Server {
                 out.println("Welcome to the chat, " + name + "!");
 
                 synchronized (clients) {
-
                     if (clients.size() > 1) {
                         out.println("Currently connected clients:");
                         for (ClientHandler client : clients) {
