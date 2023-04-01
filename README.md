@@ -36,6 +36,7 @@ Getting Started
 7- Enter your username and password when prompted to authenticate and start chatting.
 
 Usage:
+
  -> Enter your username and password to authenticate and join the chat.
 
  -> To send a message to all connected clients, simply type your message and press enter.
@@ -45,5 +46,6 @@ Usage:
  -> To quit the chat, type quit and press enter.
  
 Contributing:
+
  If you would like to contribute to this project, please fork the repository and submit a pull request. 
  
