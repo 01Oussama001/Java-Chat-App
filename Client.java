@@ -1,16 +1,19 @@
 package FB;
 
-import java.io.*;
-import java.net.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-        
+
         System.out.println("Enter your username:");
         String username = scanner.nextLine();
-        
+
         System.out.println("Enter your password:");
         String password = scanner.nextLine();
 
@@ -18,11 +21,9 @@ public class Client {
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-            
-            
+
             out.println(username + " " + password);
 
-            
             String authResponse = in.readLine();
             if (authResponse.equals("authenticated")) {
                 System.out.println("You are now authenticated.");
@@ -31,8 +32,7 @@ public class Client {
                 socket.close();
                 return;
             }
-            
-          
+
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -47,7 +47,6 @@ public class Client {
                 }
             }).start();
 
-            
             while (true) {
                 String message = scanner.nextLine();
                 if (message.equalsIgnoreCase("quit")) {
@@ -74,4 +73,3 @@ public class Client {
         }
     }
 }
-
