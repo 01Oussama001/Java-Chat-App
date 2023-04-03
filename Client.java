@@ -34,7 +34,7 @@ public class Client {
             }
 
             new Thread(new Runnable() {
-                @Override
+
                 public void run() {
                     try {
                         String message;
@@ -42,7 +42,7 @@ public class Client {
                             System.out.println(message);
                         }
                     } catch (IOException e) {
-                        e.printStackTrace();
+
                     }
                 }
             }).start();
@@ -67,7 +67,7 @@ public class Client {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+
         } finally {
             socket.close();
         }
