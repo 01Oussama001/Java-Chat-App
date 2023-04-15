@@ -1,54 +1,24 @@
-#Java Chat Application#
+# Java-TCP-GUI-Chat
+<h3>Intro</h3>
+As a project in communications course in my BSc degree I was required to make a chat application.
+<br />
+I made this program from scratch completely by myself and without copying any functionality from other sources.
+<br />
+I know the code isn't perfect, but I did it in a rush to submit on time, while I had other academic duties.
+<br><br>
+The user who runs the Server JAR is considered as the server.
+All other users which are in the same WiFi network as the server can connect to the chat by runnig the Client.JAR file and communicate using the advanced features that I made. <br>
+<br>
+I added a class diagram and a detailed java doc.<br>
+Feel free trying to challange the application, check for bugs and copy the code.
+<br>
 
-This Java Chat Application is a basic multi-client chat application that allows multiple clients to connect and chat in real-time. The chat application consists of two parts, a client-side and server-side. The client-side of the chat application is developed using Java, and the server-side is developed using Java and MySQL.
+<h3>How to use:</h3>
+<h4>How to start the server:</h4>
+  You need to have the <strong>Server.jar</strong> and <strong>Client.jar</strong> either compile it by yourself or use the ones I've compiled which are located in the folder Final JARs.<br>
+  Run <strong>Server.jar</strong> and click Start (make sure port 18524 is free)<br>
+  <h4>How to start the client (do it for every new client):</h4>
+    Run Client.JAR type the local address of the machine that started the server.<br>
+    Choose a name.<br>
+    Click connect.
 
-The application allows users to enter their username and password to authenticate and join the chat. Once authenticated, the user can send and receive messages to and from other connected clients. The application also supports private messaging, where a user can send a message to a specific user in the chat.
-
-Prerequisites:
-
-Java Development Kit (JDK) 8 or higher
-MySQL
-
-Getting Started:
-
-1- Clone the project to your local machine using the following command:
-   git clone https://github.com/<username>/java-chat-app.git
-
-2- Import the project into your preferred IDE.
-
-3- Create a MySQL database and execute the following SQL script to create the required tables:
-   CREATE TABLE users (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(255) UNIQUE,
-    password VARCHAR(255)
-  );
-
-  CREATE TABLE messages (
-   id INT PRIMARY KEY AUTO_INCREMENT,
-   sender VARCHAR(255),
-   receiver VARCHAR(255),
-   message TEXT
-  );
-  
-4- Modify the database connection details in the Server.java file to match your database configuration.
-
-5- Run the Server.java file to start the chat server.
-
-6- Run the Client.java file to connect to the chat server.
-
-7- Enter your username and password when prompted to authenticate and start chatting.
-
-Usage:
-
- -> Enter your username and password to authenticate and join the chat.
-
- -> To send a message to all connected clients, simply type your message and press enter.
-
- -> To send a private message to a specific user, type @[recipient] [message] and press enter. Replace [recipient] with the username of the user you want to send the message to, and [message] with the message you want to send.
-
- -> To quit the chat, type quit and press enter.
- 
-Contributing:
-
- If you would like to contribute to this project, please fork the repository and submit a pull request. 
- 
