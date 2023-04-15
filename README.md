@@ -1,8 +1,8 @@
 # Java-TCP-GUI-Chat
 <h3>Intro</h3>
-As a project in communications course in my BSc degree I was required to make a chat application.
+As a project in communications network Sockets course in my 2nd engineering cycle degree I was required to make a chat application.
 <br />
-I made this program from scratch completely by myself and without copying any functionality from other sources.
+We made this program from scratch completely by ourselves and without copying any functionality from other sources.
 <br />
 I know the code isn't perfect, but I did it in a rush to submit on time, while I had other academic duties.
 <br><br>
